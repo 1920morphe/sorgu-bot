@@ -1,6 +1,6 @@
 @echo off
 set "dosyaAdi=node_modules"
-title Made By Atahan#8888
+title Made By Morphé
 :a
 
 if exist "%dosyaAdi%" (
@@ -11,7 +11,7 @@ if exist "%dosyaAdi%" (
     npm i
     cls
     color b
-    node atahan.js
+    node morphe.js
 )
 
 goto a
