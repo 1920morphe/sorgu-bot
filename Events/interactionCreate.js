@@ -8,7 +8,7 @@ module.exports = {
         let client = int.client;
         let embed = new EmbedBuilder()
         .setAuthor({ name: int.user.username, iconURL: int.user.displayAvatarURL({ dynamic: true }) })
-        .setFooter({ text: "© Atahan#8888" })
+        .setFooter({ text: "Morphé sorgu bot!" })
 
         if (int.isChatInputCommand()) {
 
