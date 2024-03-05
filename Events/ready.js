@@ -5,7 +5,7 @@ module.exports = {
     name: "ready",
     async executor(client) {
 
-        client.user?.setPresence({ activities: [{ name: "Made By Atahan#8888", type: ActivityType.Playing }], status: "dnd" });
+        client.user?.setPresence({ activities: [{ name: "📌 | Yapımcının github adresi: 1920morphe", type: ActivityType.Playing }], status: "dnd" });
         console.log(`${client.user.tag} ismi ile giriş yapıldı!`);
 
         try {
@@ -13,10 +13,10 @@ module.exports = {
             const rest = new REST({ version: "10" }).setToken(client.token);
 
             await rest.put(Routes.applicationCommands(client.user.id), { body: client.globalCommands });
-            console.log(`(*) ${client.globalCommands.length} komut yüklendi!`);
+            console.log(`[KOMUT] ${client.globalCommands.length} komut yüklendi!`);
 
         } catch {
-            console.log(`(*) Komutlar yüklenemedi!`);
+            console.log(`[KOMUT] Komutlar yüklenemedi!`);
         }
 
     }
