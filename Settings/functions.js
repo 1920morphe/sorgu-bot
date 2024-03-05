@@ -13,7 +13,7 @@ async function getData(url) {
 
     } catch (error) {
         console.log(error);
-        return { success: false, message: "API çekilemedi"}
+        return { success: false, message: "Maalesef, API çekilemedi."}
     }
 
 }
